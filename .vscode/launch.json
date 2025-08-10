@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "debug main.py",
+            "request": "launch",
+            "justMyCode": false,
+            "args": [],
+            "program": "/Users/dixietech/Documents/BOOT_DEV/ai-agent/main.py"
+        }
+    ]
+}
