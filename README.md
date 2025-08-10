@@ -45,14 +45,17 @@ The repository is organized as follows:
 The `config.py` file contains important configuration settings:
 
 -   `MAX_CHARS`: Limits the number of characters read from a file to prevent excessive memory usage.
--   `WORKING_DIR`: Specifies the working directory for the AI assistant. **For demonstration purposes, this is set to `'./calculator'`**, meaning the AI can only access and modify files within the `calculator` directory. This restriction is in place to prevent unintended modifications to the entire file system.
+-   `WORKING_DIR`: Specifies the working directory for the AI assistant. **For demonstration purposes, this is set to './calculator'**, meaning the AI can only access and modify files within the `calculator` directory. This restriction is in place to prevent unintended modifications to the entire file system.
 -   `MAX_ITERS`: Limits the number of iterations the AI can perform to prevent infinite loops.
 
 ## Running the Assistant
 
 1.  **Set up your environment:**
     -   Install the required dependencies (e.g., using `pip install -r requirements.txt`).
-    -   Set the `GEMINI_API_KEY` environment variable with your Gemini API key.
+    -   **Obtain a Gemini API key:**
+        -   Go to the [Google AI Studio](https://makersuite.google.com/app/apikey).
+        -   Create a new API key.
+        -   Set the `GEMINI_API_KEY` environment variable with your Gemini API key.
 
 2.  **Run the `main.py` script:**
 
