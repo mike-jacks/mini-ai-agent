@@ -44,6 +44,29 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calculator.evaluate("+ 3")
 
+    def test_exponent_positive(self):
+        result = self.calculator.evaluate("2 ** 3")
+        self.assertEqual(result, 8)
+
+    def test_exponent_negative(self):
+        result = self.calculator.evaluate("4 ** -1")
+        self.assertEqual(result, 0.25)
+
+    def test_exponent_zero(self):
+        result = self.calculator.evaluate("5 ** 0")
+        self.assertEqual(result, 1)
+
+    def test_exponent_fractional(self):
+        result = self.calculator.evaluate("9 ** 0.5")
+        self.assertEqual(result, 3)
+
+    def test_modulo(self):
+        result = self.calculator.evaluate("10 % 3")
+        self.assertEqual(result, 1)
+
+    def test_modulo_complex(self):
+        result = self.calculator.evaluate("10 % 3 + 5")
+        self.assertEqual(result, 6)
 
 if __name__ == "__main__":
     unittest.main()
